@@ -1,0 +1,123 @@
+.body_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh; /* ensures full viewport height */
+  background-color: #E6E1CF;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(90deg, #285A4A 12%, #6B9810 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.logo {
+  width: 175px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.sidebar-nav a {
+  color: #DEDFBF;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: background 0.3s, color 0.3s, border-left 0.3s;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 5px solid #DEDFBF;
+  color: #ffeb3b;
+}
+
+.sidebar-nav a.active {
+  background: #13352a;
+  border-left: 5px solid #DEDFBF;
+  color: #DEDFBF;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start; /* top-align text and image */
+  justify-content: space-between;
+  gap: 60px;
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #f5f2e8;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.titlePage {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  text-decoration: underline;
+  color: #3A3A3F;
+  margin-bottom: 5%;
+}
+
+.aboutUsInfo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #3A3A3F;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Image section */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.learn-more-btn {
+  background: #6B9810;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  box-shadow: -6px 6px 0px #285A4A;
+  transition: 0.2s ease-in-out;
+  margin-top: 8px;
+  margin-left: 15%;
+}
+
+.learn-more-btn:hover {
+  transform: translate(-3px, 3px);
+  box-shadow: -9px 9px 0px #285A4A;
+}
