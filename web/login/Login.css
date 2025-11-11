@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #eaeaea;
+    background: #E6E1CF;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 
 .left-box {
     width: 50%;
-    background: #f9f5e9;
+    background: #E6E1CF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ body {
     background: #4d8b23;
     border: none;
     border-radius: 20px;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
@@ -87,10 +87,10 @@ body {
 
 
 .right-box {
-    width: 50%;
-    background: linear-gradient(135deg, #0e5a29, #67c221);
-    position: relative;
-    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
 }
 
 

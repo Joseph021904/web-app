@@ -1,7 +1,7 @@
 document.getElementById('login').addEventListener('submit', function(e) {
   e.preventDefault();
 
-    // Get the values from the input fields
+   
     const Username = document.getElementById("Username").value.trim();
     const password = document.getElementById("password").value.trim(); 
     
