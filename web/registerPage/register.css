@@ -1,0 +1,45 @@
+.body_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #E5E5E5;
+}
+
+.upper_text {
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* removes all default margins */
+    padding: 0 60px; /* only horizontal padding if needed */
+}
+.register-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    background-color: #E5E5E5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.register-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 15px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.side img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+}
