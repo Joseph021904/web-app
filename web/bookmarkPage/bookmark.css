@@ -9,18 +9,16 @@
 /* ---------- Sidebar ---------- */
 .sidebar {
   width: 220px;
-  background: linear-gradient(90deg, #285A4A 12%, #6B9810 100%);
+  background-image: url('sidebar.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 15px;
   box-sizing: border-box;
-}
-
-.logo {
-  width: 175px;
-  height: auto;
-  margin-bottom: 20px;
+  min-height: 100vh;
 }
 
 .sidebar-nav {
@@ -78,7 +76,7 @@
 .search-bar {
   display: flex;
   align-items: center;
-  width: 500px; /* fixed width so design stays stable */
+  width: 800px; /* fixed width so design stays stable */
   background-color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
@@ -95,19 +93,31 @@
   flex: 1;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   background-color: transparent;
 }
 
-/* icons right beside search bar */
 .header-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* spacing between user & message icons */
+  display: flex;          /* makes all icons in a row */
+  align-items: center;    /* vertically centers them */
+  gap: 20px;              /* space between icons */
 }
 
 .header-icons i {
-  font-size: 20px;
+  font-size: 32px;        /* bigger icons */
   color: #3A3A3F;
   cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  margin-inline: 10px;
+}
+
+.header-icons i:hover {
+  color: #6B9810;
+  transform: scale(1.2);  /* optional hover grow effect */
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
 }
