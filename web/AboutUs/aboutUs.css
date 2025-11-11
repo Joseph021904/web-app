@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, #285A4A 12%, #6B9810 100%);
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
 }
 
 .body_wrapper {
@@ -10,7 +11,6 @@ body {
   flex-direction: row;
   width: 100vw;
   min-height: 100vh;
-  position: relative;
 }
 
 .sidebar {
@@ -23,8 +23,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 20px 15px;
-  box-sizing: border-box;
   min-height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
 }
 
 .sidebar-nav {
@@ -41,7 +45,6 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   border-left: 2px solid transparent;
   transition: background 0.3s, color 0.3s, border-left 0.3s;
@@ -59,29 +62,38 @@ body {
   color: #DEDFBF;
 }
 
-.main-content {
+.main-wrapper {
   flex: 1;
-  margin: 40px;
-  padding: 40px;
-  min-height: calc(100vh - 80px);
-  background-color: #f5f2e8;
-  box-shadow: 0 6px 0 #285A4A;
-  border: 8px solid rgba(107,152,16,0.06);
-  border-radius: 25px 25px 25px 25px;
+  margin: 0px;
+  padding: 20px;
+  background: linear-gradient(90deg, #285A4A 0%, #6B9810 100%);
+  display: flex;
+  justify-content: center;
   box-sizing: border-box;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: #f5f2e8;
+  border-radius: 20px;
   display: flex;
   gap: 60px;
   align-items: flex-start;
   justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 0 6px 0 #285A4A;
 }
 
 .text-content {
   flex: 1;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 .titlePage {
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 45px;
   text-decoration: underline;
@@ -90,20 +102,19 @@ body {
 }
 
 .aboutUsInfo {
-  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: #3A3A3F;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
-.image-content {
+.aboutUsImage {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.image-content img {
+.aboutUsImage img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -114,7 +125,6 @@ body {
   background: #6B9810;
   color: white;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
   padding: 10px 28px;
   border-radius: 30px;
   cursor: pointer;
@@ -122,11 +132,46 @@ body {
   position: relative;
   box-shadow: -6px 6px 0px #285A4A;
   transition: 0.2s ease-in-out;
-  margin-top: 8px;
-  margin-left: 15%;
+  align-self: flex-start;
+  margin-top: 20px;
 }
 
 .learn-more-btn:hover {
   transform: translate(-3px, 3px);
   box-shadow: -9px 9px 0px #285A4A;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons i {
+  font-size: 32px;
+  color: #3A3A3F;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.header-icons i:hover {
+  color: #6B9810;
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .main-wrapper {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .text-content, .aboutUsImage {
+    max-width: 100%;
+  }
 }
