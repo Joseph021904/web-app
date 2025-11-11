@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FROOOM Login</title>
-<link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-</head>\
+</head>
   <link rel="stylesheet" href="Login.css">
 <body>
+    
 
 <div class="container">
 
@@ -19,15 +17,17 @@
 
         <h3>Welcome to FROOOM!</h3>
 
-        <label>Username:</label>
-        <input type="text" placeholder="Enter Username">
+        <form id="login">
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" placeholder="Enter Username" required>
 
-        <label>Password:</label>
-        <input type="password" placeholder="Enter Password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
 
-        <button class="login-btn">Login</button>
+        <button type="submit" class="login-btn">Login</button>
 
-        <p class="register-text">Dont have an account? <a href="#">Register</a></p>
+        <p class="register-text">
+            Dont have an account? <a href="#" id="register-text">Register</a></p>
 
         <div class="social-icons">
             <i class="fab fa-facebook"></i>
@@ -39,6 +39,8 @@
     <div class="right-box"></div>
 
 </div>
+
+<script src="ScriptLogin.js"></script>
 
 </body>
 </html>
