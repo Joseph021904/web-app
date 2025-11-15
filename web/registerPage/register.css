@@ -115,11 +115,32 @@
 
 .register-form label {
     font-family: 'Inter-Regular', sans-serif;
+    font-style: bold;
     font-size: 16px;
     color: #3A3A3F; /* sets text color */
-
+    font-weight: bold;
     display: block;     /* ensures margin works */
 }
+
+/* INPUT HOVER EFFECT */
+.register-form input {
+    transition: 0.25s ease;   /* smooth animation */
+}
+
+.register-form input:hover {
+    border-color: #528126;
+    box-shadow: 0 0 6px rgba(82, 129, 38, 0.5);
+    background-color: #f2ead3;   /* slightly lighter than #E6E1CF */
+}
+
+/* INPUT FOCUS EFFECT (when typing) */
+.register-form input:focus {
+    outline: none;
+    border-color: #285A4A;
+    box-shadow: 0 0 8px rgba(40, 90, 74, 0.5);
+    background-color: #fff;      /* cleaner look while typing */
+}
+
 
 .bottom_text {
     font-family: "inter-regular", sans-serif;
@@ -132,4 +153,3 @@
     color: inherit;
     text-decoration: none;
 }
-
