@@ -1,0 +1,123 @@
+.body_wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #E6E1CF; /* beige background */
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  width: 220px;
+  background-image: url('sidebar.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.sidebar-nav a {
+  color: #DEDFBF;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: background 0.3s, color 0.3s, border-left 0.3s;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 5px solid #DEDFBF;
+  color: #ffeb3b;
+}
+
+.sidebar-nav a.active {
+  background: #13352a;
+  border-left: 5px solid #DEDFBF;
+  color: #DEDFBF;
+}
+
+/* ---------- Header ---------- */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header: keep search bar to the left, icons next to it ---------- */
+.header {
+  background-color: #E6E1CF; /* same beige as background */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* search bar stays on the left */
+  padding: 15px 30px;
+  gap: 20px; /* small space between search bar and icons */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* keep search bar left-aligned */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 800px; /* fixed width so design stays stable */
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.search-bar .search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #6B9810;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.header-icons {
+  display: flex;          /* makes all icons in a row */
+  align-items: center;    /* vertically centers them */
+  gap: 20px;              /* space between icons */
+}
+
+.header-icons i {
+  font-size: 32px;        /* bigger icons */
+  color: #3A3A3F;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  margin-inline: 10px;
+}
+
+.header-icons i:hover {
+  color: #6B9810;
+  transform: scale(1.2);  /* optional hover grow effect */
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+  box-sizing: border-box;
+}
